@@ -4,9 +4,9 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2025/01/19/%E4%B8%8D%E6%98%AFsec/"/>
-    <url>/2025/01/19/%E4%B8%8D%E6%98%AFsec/</url>
+    <title>并非sec</title>
+    <link href="/2025/01/19/%E5%B9%B6%E9%9D%9Esec/"/>
+    <url>/2025/01/19/%E5%B9%B6%E9%9D%9Esec/</url>
     
     <content type="html"><![CDATA[<p>大家好啊，今天来点大家想看的东西啊。</p><p>Linux （我）常用的指令：</p><p><code>cd &#123;path&#125;</code> 切到路径所指位置去。（<code>cd ..</code> 回退）</p><p><code>ls</code> 查看当前目录下有些啥。</p><p><code>mkdir &#123;name&#125;</code> 创建名为 name 的文件夹。</p><p>别的没常用。</p>]]></content>
     
