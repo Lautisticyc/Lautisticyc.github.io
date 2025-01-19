@@ -1,493 +1,442 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
+<meta name="twitter:card" content="summary_large_image">
   
   
   
-<link rel="stylesheet" href="/css/style.css">
+  <title>Hexo</title>
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
   
 <meta name="generator" content="Hexo 7.3.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-fir" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/01/19/fir/" class="article-date">
-  <time class="dt-published" datetime="2025-01-19T08:49:56.000Z" itemprop="datePublished">2025-01-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/19/fir/">fir</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>满一岁也该写点东西，大家已经提议把这一天作为一个节日了。</p>
-<p>好吧，希望这次怨气没有这么大。也但愿不要写得像读后续写。</p>
-<p>要开始这个故事，我们得先睡过去。</p>
-<h3 id="1-睡！"><a href="#1-睡！" class="headerlink" title="1.睡！"></a>1.睡！</h3><p>该如何醒来呢？</p>
-<p>昨天是愚人节，除了在 florr 上被戏弄了一下倒是没被 fool 到。</p>
-<p>今天是比赛的第二天，打完了摆了返校了自习了回家了发现自己写挂了一小点。</p>
-<p>不过我自信不会被恶意发现的。</p>
-<p>可是我住在高空20层夹在高楼中间，怎么会有鸟叫？</p>
-<br/>
-
-<p>我睁开眼，发现自己不在租来的陪读房里，而是躺在荒草与还不算黑的落叶上，倒也不比床上躺着难受。</p>
-<p>现在几点了，我在哪里，是不是还得上文化课？不过当我爬起来向四周打望，一切疑问都消除了：我无疑是回不去的。</p>
-<p>周围有一团一团的迷雾，之所以说是一团一团，是因为它们围起来的、我能看清的地方被划分成了很大很大的方块。这里的树也并不太遮荫，只是很高，树干细细的一截，只在最上面有一团树叶。孱弱的阳光就穿过上方薄薄的一层雾照进来。照在身上倒有一种温馨的怀念感。还有树上的鸟，直接就窝在树叶团的中间，仿佛被困在其中，向我呼号。地上的草不算稀也不算密，看不出是不是有人走过。四处可见残破的石楼梯，只有那样一截一截，只是通向更高一点的空气。还有一段一段的断壁残垣和断成截的石雕，倒像是曾经有过文明在此。</p>
-<p>你可能会问这人文笔这么烂还来堆这么多环境描写干什么。我只是想营造一种阅读了环境描写的精神体验，其实你只需要知道这是一片有着建筑遗迹的荒林就好。</p>
-<p>哦哦，还没有说每个方块地界的中央都有一颗白色的巨型的棋子。圆圆的，看起来滑滑的，有玉的质感。不过我想，还是不要乱摸的好。</p>
-<p>走近一片雾，雾里的神秘没有显现丝毫。我只能走进去。眼前的一切豁然开朗，不过也只是这一个地块，我往回望，之前所见的一切还能看清，只有一层薄雾，仿佛雾墙从未存在过。我有呼喊同类的冲动，可是直觉告诉我不要这样做，它甚至让我退回了上一个方块。</p>
-<p>那雾墙又出现在眼前。里面白色灰色的雾气交错流动，大概是我搅动了他们的安宁。我望着这个地界里白色的棋子，大概上面是平的比较好睡觉吧，我想爬上去睡。也许这是一个梦，我再睡一会儿也许就出去了。可是我一碰到那棋子，它便虚化了，露出石子下面被压得扁平的草地。这让我想起雾墙外的方格好像是没有棋子的。我要回去求证。雾墙上白色和灰色在那个方向显出一丝绿色。我没有在意，只想知道自己的记忆是否还准确。穿了过去，果然，是没有的。我冲过去想坐在空地上炫耀我的功绩。但一碰到空地边缘，一颗白色的棋子冒了出来，把我挤开了。</p>
-<p>我感到恐惧和恐惧争夺我，我竟然被一颗棋子打了脸，我往回跑，不管是雾墙还是薄雾，一直回到最开始的地方。才感到一点安心。汗水粘着潮湿的空气，急促的呼吸仿佛不是我的。</p>
-<p>但我更想睡觉了，想尽快逃离这令人不安的梦境。我又爬一颗棋子，这次成功了，没有虚化。没有想象中那么滑，我顺利爬到顶上。原来顶上还有一个数字是“134”。有点诡异，但是无所谓了，“1”的凹槽还蛮大，正好躺进去睡觉不会滑下去。</p>
-<p>里面还有点软软的，我很快就睡着了。</p>
-<h3 id="2-谁？"><a href="#2-谁？" class="headerlink" title="2.谁？"></a>2.谁？</h3><p>一觉醒来，欸我怎么还没出去。</p>
-<p>看来不是梦了。可是这太奇怪了。</p>
-<p>夕阳正照在大片大片的雾上，投射出金色的光辉。鸟儿仍稳坐笼中，看着这个怅然若失的人。</p>
-<p>我决定不穿过雾，在看得见的地方转一转，大概就不会有奇怪的事情发生。</p>
-<p>夕阳下最边缘的地块，有一道河围在外面。其实我看不见这条河的底，也看不见对岸。只觉得隐隐约约有淡淡的没味吹过来。</p>
-<p>我水性不好，也不敢试这深不见底的河。</p>
-<p>又晃晃，发现了河边还有一个地块里的棋子很特殊，它不是白的，更不是黑的。看上去像是原木的。矮矮的圆柱形，中间有点凸出。我并不吸取之前移走了一颗棋子的教训，直接爬了上去。上面一道黑线绕着整个棋子顶面做个装饰，中间写个大大的“卒”。</p>
-<p>是颗象棋。然后呢。“卒”的最底下躺着一个人。</p>
-<p>他穿着黑衣服黑长衫，把帽子盖在脸上睡。黑色的布料上缀着闪着霞光的玻璃。背面应该是没有的，不然不会睡得着。</p>
-<p>我蹑手蹑脚走过去探探他的鼻息。他大概十一二岁的样子，面皮白净，嘴角虽然没有习惯性上扬，倒也没有习惯性下撇。还没有睁眼，眉眼间便已经透出一股稚气。</p>
-<p>不过我还没有探到，他就已经发现了我的鼻息，从地上弹起来，跑开一段距离了。</p>
-<p>他的不安的眼睛瞪得挺大，可见他不是另一个我。</p>
-<p>“你是谁？”“额，我没有恶意。”“你是谁？！”“我如何向你做出有价值的说明呢？”</p>
-<p>他站在棋子边缘随时准备跳下去，盯着我想了几秒。我想他大概是个很内向的孩子，他说话的时候手都不知道往哪里放，晃了半天才决定插进兜里。</p>
-<p>“把手伸出来看看吧。”</p>
-<p>他好像有点犹豫。我也有点犹豫这是不是什么机制，不过想到他很犹豫，我就伸了。</p>
-<p>伸出来时，我才发现自己手腕上有一股蓝光。他想要的好像就是这个，他舒了口气。软了下来。</p>
-<p>“原来是队友啊。”</p>
-<p>我刚想往他那边走，突然想起什么。</p>
-<p>“看看你的！”</p>
-<p>他随意地把手伸出来。也是蓝光。</p>
-<br/>
-
-<p>好好好，找到队友了，我们两个靠着坐在棋子旁边的一颗树下面。他告诉我，他叫尘，马上要上初中了。我说我叫白，快上大学了。他也是睡了一觉之后就在这里醒来了，只不过大概比我早两天。</p>
-<p>他抬起手看了看蓝光，告诉我也去看，大概是有点事。</p>
-<p>我抬起手看了看蓝光，显示出一个长得像电饭煲的波特模样。他看起来很生气，表达的方式是从脑袋上的孔往外喷气。</p>
-<p>那么接下来交给他。</p>
-<h3 id="3-尺子"><a href="#3-尺子" class="headerlink" title="3.尺子"></a>3.尺子</h3><p>不是你这人也太离谱，这么大人了，在陌生地方莫名其妙醒来都不检查一下自己全身哪里有没有问题？</p>
-<p>在这里晃了这么久，你居然手都不抬起来看一下？！</p>
-<p>还啥也不知道就走了一步棋？！真是气死我了，啊呀呀呀呀呀呀呀！（喷气）</p>
-<p>算了，我还得给你介绍规则。</p>
-<br/>
-
-<p>这里是一个巨大的20*20的棋盘，你所看到的每一个地块都是棋盘上的一个格子。</p>
-<p>每个地块大小为200m*200m，每个格子上可以放置一个棋子。</p>
-<p>我方普通棋子为白色，敌方为黑色。我方特殊棋子有一个，为“卒”，敌方特殊棋子有两个，都是“将”。双方棋子初始连通，但不一定填满了。</p>
-<p>别问，别问，我怎么知道为什么“将”有两个。</p>
-<p>每个普通棋子有一个等级，就标在顶上，双方普通棋子间等级高的可以吃等级低的。特殊棋子之间可以互吃。</p>
-<p>普通棋子和特殊棋子之间不能互吃。</p>
-<p>特殊棋子按照对应象棋走法行进。哦，对了，</p>
-<p>“卒”已过河。</p>
-<p>当我方吃掉对方一个“将”或我方“卒”到达对方底线时，我方获胜。当我方“卒”被吃掉时，我方失败。</p>
-<p>别急别急，我知道你想回家。只要你赢了就可以回去了。</p>
-<p>输了呢？额……大概是下一局吧。</p>
-<p>整个棋局被计算证明是公平的，具体怎么个公平法我也不清楚，也许是两方都采取最优策略可以平局？</p>
-<p>你要问是谁把你整进来的。这个我可不知道，我也是被整进来的，还出不去。</p>
-<p>哦，还有，棋手之间的物理攻击被认为是有效的。</p>
-<p>我方行动时间是上午，敌方是下午。</p>
-<p>别慌啊，在有我方棋子的地块里，你会被给予无敌状态。</p>
-<p>在一个地块里，可以看到连通的所有我方地块，其余部分被雾墙遮挡。</p>
-<p>当然当你获取了一个地块的信息，我会自动帮你记下来的。</p>
-<p>以及我们有官方提供的娱乐游戏《卡牌》，你想玩的话可以找我玩也可以找你队友玩。</p>
-<p>现在是晚上，你可以玩玩然后睡了，也可以出去探探，不过注意安全。</p>
-<p>我先去给你们煮点饭。</p>
-<h3 id="4-布谷"><a href="#4-布谷" class="headerlink" title="4.布谷"></a>4.布谷</h3><p>“我是森林中的布谷鸟，家住在美丽的半山腰~”</p>
-<p>这句歌词和我挺合，虽然这里没有山，更谈不上半山腰，但是我挺喜欢它。</p>
-<p>唱着这首歌的人和一个穿着闪耀月光的黑衣少年走在一起，他穿着红褐色的衣服和灰扑扑的裤子，背有点驼。和那个少年一样腼腆，他唱着歌的时候也不好意思看对方。</p>
-<p>我从笼子一样的树叶中挣出来，跟着他们往前走。</p>
-<p>他们一路唱着，我很好奇为什么两个年龄段差距这么大的年轻人唱的歌相差无几。老一点的那个，虽然歌唱得不算很差，但是能听出来，很久不唱歌了。年轻的那个倒是更活泼些，歌也唱得欢快一点。</p>
-<p>我也要一展我的歌喉。我扑棱扑棱翅膀，在他们头顶大声唱起我最爱的《小小少年》。</p>
-<p>两个人都驻足倾听，为了保持在他们头顶，我只好在上面盘旋。</p>
-<p>“哥，你会唱这首歌吗？”</p>
-<p>“我不会，但是我以前有个补习班同学会。”</p>
-<p>“那我来唱。”</p>
-<p>他就和我唱起来。少年的声音是温柔的，又有一种变声期前的尖利。他的音调不很准，有时会歪一点。不过我懂得欣赏，童声的略略跑调也是一种美呢。</p>
-<p>我们的歌声有些大了，吵醒了周围树叶里的一些鸟，他们向我们投来鄙夷的目光，表示被吵醒之后的厌烦。不过无所谓，他们不会有心出笼子来收拾我的。</p>
-<h3 id="5-雨"><a href="#5-雨" class="headerlink" title="5.雨"></a>5.雨</h3><p>晃得有点晚了，我请求他，回去了吧。</p>
-<p>他说好吧，顺便看看波特是不是真的把饭煮好了。</p>
-<p>哈哈，其实波特真的是会煮饭的，我昨天吃过了，味道还不错。</p>
-<p>不过回去的时候路上下起了小雨。树叶是一小团一小团的，根本遮不住雨。我们只好冒着雨往回走。我倒是有一个帽子，可是他没有呢。他捡了几根带叶的树杈略微挡一挡，但我觉得没啥用。</p>
-<p>可是，就算回去了，也没有地方躲雨啊。</p>
-<p>小雨淅淅沥沥的，放线菌散发出下雨的好闻的味道。鸟儿惊慌失措地乱叫，因为树叶也遮不住它们呢。</p>
-<p>回到棋子，雨停了，波特在昨天同样的位置摆好了饭。还是看不见他人到底在哪里，啊不，是他波到底在哪里。我们吃完了饭，试了一下卡牌游戏，觉得太烧脑就准备睡了。</p>
-<p>他拿起树杈准备把“卒”字凹痕里的水扫出去，但是已经被吸干了。那么我们就头挨着头睡下了。</p>
-<h3 id="6-下"><a href="#6-下" class="headerlink" title="6.下"></a>6.下</h3><p>第二天醒来，又该走下一步了。</p>
-<p>不过昨晚我们并没有出去，只在我们自己的连通块里晃了一圈，并没有任何新信息。</p>
-<p>我看了看手腕，波特正在伸懒腰，头上标了名字：“波特（觉醒）”。</p>
-<p>看见我疑惑地看他，他也调大摄像头疑惑地看着我，这时他的名字就变成“波特”了。</p>
-<p>真是奇怪。</p>
-<p>不过早上的时间并不长，这也许是先手的劣势吧。我打算赶紧出去收集点信息然后准备走今天的步。</p>
-<p>他欣然同意了。他说自己太弱了之前都不太敢出去探。还让我注意安全。</p>
-<p>我走的时候他站在象棋子上，向我大大地挥着手，我让他注意波特发来的信息，早点开始想象。</p>
-<br/>
-
-<p>好吧现在又是一个人了。虽然在一块的时候也没太多安全感之类的东西，但自己一个人走也感觉少了点什么。</p>
-<p>不过自己的任务还是要完成的，除了我也没人可干了。那我先到最边上的地块去吧。</p>
-<p>到了最边缘的边界。左边是无底的河，前面是未知的雾墙。灰的，白的，没有任何提示，没有任何欢迎我的迹象，不过我就要闯过去了！</p>
-<p>我跑着，冲过那栋雾墙，隔壁地块里似乎没有棋子，也没有敌人，于是我又往前冲，一直要到看到敌人的棋子为止。不过我想到没有敌人，我好像也不必要浪费这么多体力，只要及时探查完，然后及时跑回去下棋就好了。</p>
-<p>我慢悠慢悠地走到第一个敌人的棋子的地方，他们的棋子黑乎乎的一坨，远远不如我们的好看，波特告诉我已经知道棋子等级了，不需要爬上去。看来他并不是通过我来看东西呢。</p>
-<p>然后是第二个第三个，始终没有看到一个人……我终于探完安全回去的时候，尘正站在象棋上眺望。至于他看见我之后是什么反应，想必大家都能猜到，不妨放一段读后续写：</p>
-<p>The moment Dusty saw the figure of mine,he rushed towards me with his clothing floating with him. _______________________________________________________________________</p>
-<p>也许有语法错误，不过我目前英语也就这样了。他向我讲了他目前下一步的想法，由于是开局，其实没太多可想，信息也不怎么全，也就勉强下一下。我也觉得他的想法没啥问题，就走他想的那步。这次我们一起去。</p>
-<p>一路上他好像有那种孩子被带着出去玩的欢快，蹦蹦跳跳的。倒是我跟在他后面了。</p>
-<p>不过要下棋还是我来，我摸一摸那颗棋子，让他退回到上一个地块，然后我到下一个地块里放下棋子，又跑回我们的大连通块。</p>
-<p>他觉得这事还挺好玩的，一个棋子，摸一下就虚化了，再跑到另外一个地方踩一下就把棋子移过去了，就算已经体验过一次，也还是想再多来几次啊。</p>
-<p>明天一起吧，他说。</p>
-<p>现在情况还没那么紧张，我答应了。</p>
-<h3 id="7-心"><a href="#7-心" class="headerlink" title="7.心"></a>7.心</h3><p>然后我们回去坐着，那颗象棋已经成了我们的家。</p>
-<p>大概很长一段时间我们都不会动这颗棋子，也动不了，所以我们直接在上面用树枝搭了个小棚，还有一些从断壁残垣捡来的石头垒起的一些小小的物件。俨然是一个简陋的栖息地了。</p>
-<p>也没啥事可干，他用树枝对地上的蚂蚁围追堵截，最后把它放到象棋边缘。我没什么事干，又想起那道题来。</p>
-<p>他突然问我，“白，你上了大学想学什么啊？”</p>
-<p>对于这种小孩子我当然笼统地回答“计算机”，但是他好像很感兴趣。</p>
-<p>“我也想学计算机，现在已经自己学了一点编程了呢。但是还没来得及练熟，还有些语法没会……”</p>
-<p>“我也学过一点，应该可以教教你。反正现在闲得没事，在地上写代码吧！”</p>
-<p>于是我把顺序结构，选择结构，循环结构一点一点抬出来，记不得的问题就自己编两个。初学者常犯的错误他一个也跑不掉。运算顺序，分号打丢，int 面和long long long。我忍着笑看他一个一个找错，他也一个一个笑着改正，用土把那里重新填平，再用石头重新写上。</p>
-<p>我好像看见初学时的我带着入门书，连出去研学坐缆车的时候还在和同学讨论一道语法题到底怎么写。</p>
-<p>“哥，怎么了？”</p>
-<p>“没事。你要读哪个中学啊？”</p>
-<p>是兄弟学校6年前新开的校区，我曾经也要读那个学校的。</p>
-<p>“挺不错的学校，好好学习吧，在那里可能也可以学这些的。”</p>
-<p>他点点头。天又要黑了，我们还不知道对面把棋下在哪里了。只有云里最后的阳光照着写满地面的代码。</p>
-<p>明天再去看吧。</p>
-<p>吃完饭我们躺在卒上，看天上的星星，在雾的方框里，我们认不出来一点熟悉的星空。大概是在城市待久了，其实根本没有认识过吧。</p>
-<p>“哥，你读的哪个学校啊？”</p>
-<p>是他要读的学校的兄弟学校。“我本来会是你学长的。”</p>
-<p>“那你为什么没读呢？”</p>
-<p>“不是我没读，是为了父母。他们告诉我，考上我现在读的这个学校，据说是全市最好的，如果不读，他们就会被骂得很惨。”</p>
-<p>“哦。我没考上呢。”</p>
-<p>“你已经和那边老师说好了吧。这样的话，没考上反而好呢。”</p>
-<p>“你那个时候也已经说好了吗？”</p>
-<p>“当然了，还是专门到学校聊过的。我只悔恨没坚持自己信守承诺。”</p>
-<p>然后我们都不说话了，风轻轻吹过我们搭的庇护所的树枝，发出哗哗的声音。</p>
-<p>我们靠在一起睡着了，夜里一场小雨抹掉了我们写的所有代码。</p>
-<h3 id="8-省略"><a href="#8-省略" class="headerlink" title="8.省略"></a>8.省略</h3><p>你知道吗，我每次想写什么东西，都最喜欢在脑袋里yy两个东西，一是开头怎么帅，二是结尾怎么爽。那么中间的过程我自然思考得不多，也感觉可能这一部分才是真正难写的部分，不过我还是尽量在省略中给你一点东西看看吧。</p>
-<p>不过鉴于我写的篇幅是有限的，而整个过程几乎是无限的，我觉得应该用一些别致的方式来表达，你说是吧，尘？</p>
-<p>虽然这样看起来像是刚学完语法的小朋友，不过你确实是，来练练吧。</p>
-<p>好，首先把每天的过程表现出来：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">for(int day=1;;++day)</span><br><span class="line">&#123;</span><br><span class="line">  QICHUANG();</span><br><span class="line">  CHIZAOFAN();</span><br><span class="line">  Bai.TANLU();</span><br><span class="line">  XIAQI();</span><br><span class="line">  CHIZHONGFAN();</span><br><span class="line">  XUEBIANCHENG();</span><br><span class="line">  CHIWANFAN();</span><br><span class="line">  XIANLIAO();</span><br><span class="line">  SHUIJIAO();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好好好不愧是我教的，鉴于你的英文水平，原谅你了。</p>
-<p>然后呢，我们可以省掉起床，吃饭，睡觉，这些没什么可写的。</p>
-<p>那么来看看探路吧。</p>
-<h3 id="9-探路"><a href="#9-探路" class="headerlink" title="9.探路"></a>9.探路</h3><p>这部分之前写过一点了，不过那次什么也没有发生。</p>
-<p>好吧其实第二天也没有发生什么，后面其实一直挺平淡的。</p>
-<p>但是后来我每天去探一趟，都感觉对方边缘没太大变化，感觉对面在搞什么不得了的秘密。我方是一直在推兵线，也快接近了。啊这些该在下棋里讲的。</p>
-<p>总之就是我们决定探深一点，看看清楚。</p>
-<p>计划是这样的：我从对方的最边界进去，一直往里面走，到处乱看。看见人就往家跑，不打架。</p>
-<p>说到这里，真奇怪对方为什么也没有来看我们，或许也只是不下棋的时候摆烂不巡逻吧。</p>
-<p>好吧其实我也只是担心会被对方夹击。不过我想对方不至于人多到那个程度，在这里锻炼了好多天了我现在跑得也还挺快。</p>
-<p>那么我就在尘挥手目送之下出发了。心情和第一次出来探路一样。</p>
-<p>我不安地一遍又一遍扫视周围的雾墙，那种感觉和小时候睡觉反复看门和窗户是一模一样的。</p>
-<p>不过很顺利我就进入对方地块了，其实也只有一格的距离了而已。</p>
-<p>没人，我还是松一口气。先再往里走一格吧。对方也许已经看到我了，也许没有。</p>
-<p>走到下一格，没有棋子。也算不上异常，继续往里吧。</p>
-<p>可是没有棋子了，一直没有。我在对方围起来的地块里晃来晃去，好久也没有发现一个棋子。问波特，他那边收集了信息，还显示我在哪一格，并没有什么错误。</p>
-<p>也许就是这样吧。</p>
-<p>最后我终于找到一个棋子，长得和卒差不多，想必就是将了。居然让我找到了，对方还真是随便啊。而且居然没人，不知道跑哪里摆去了。</p>
-<p>不过将有两个，我还得再接着找。</p>
-<p>但是我想，如果我直接从这里跨到一个陌生地块的话，万一对方正在对面埋伏我怎么办呢？所以我退回中立地块，绕了个路。选了个刁钻的位置钻进去。</p>
-<p>一钻进去，一眼就可以穿过树的空隙看到，将上有两个人。他们是双胞胎吧，就像这两个将一样。具体样貌看不清，但我也不需要看清了。不知道对方实力，我还是拼命地跑了回去。</p>
-<p>后来我还是经常去探查对方两个将的情况。有时正好遇到他们离边界很近，才看清了他们的面貌。</p>
-<p>果然是双胞胎。穿着一身严严实实的闪亮的盔甲，配着看起来就很锋利的剑，还戴着挡得严严实实的头盔。是怕我看见吧，哈哈！他们两个人走路趾高气昂的，踏得很响，不过也许是因为鞋子太重不得不响。</p>
-<p>我质问波特这些装备也被计算在公平里面吗，他说也许吧。</p>
-<h3 id="10-下棋"><a href="#10-下棋" class="headerlink" title="10.下棋"></a>10.下棋</h3><p>这部分其实不太好写，虽然波特存了全面的记录，但是我没法把它全部展现在这里。</p>
-<p>不过其实这整个过程和故事并没有太大的关联，你也不需要探寻这副棋的必胜策略。</p>
-<p>那么我就直接聊聊结果叭。</p>
-<p>经过我们在下棋的空隙不懈努力编写代码，最后发现以我们的能力不可能找到甚至较优的策略，于是策马奔腾天马行空胡思乱想，通过玄学下棋将对方的一个将卡住了。然后接下来就很简单地把棋子一点一点挪向胜利了，只是每次都要防备对手在中立地块偷袭。</p>
-<h3 id="11-闲聊"><a href="#11-闲聊" class="headerlink" title="11.闲聊"></a>11.闲聊</h3><p>说闲聊其实也不是很闲，尘经常还让我接着讲算法之类的。</p>
-<p>讲完了之后才是真闲聊。</p>
-<p>我们聊得很广，聊到家乡，自己的学校，自己的同学。终于有一个人能够理解自己的吐槽是一件难得的乐事。有的事情，他说了之后，其实由于年龄的关系，我看出的东西比他多。不过我选择闭口不言，该发现会发现的。</p>
-<p>我们聊起自己小时候，他回忆和同学疯跑，在小区里大声唱“我的滑板鞋，时尚时尚最时尚”，在小区的水塘景观旁边乱跑摔跤湿了鞋，在保安的劝阻下依然爬小区里的假山，和同学在物管门前的喷泉边穿溜冰鞋玩“321木头人”，喊停之后还接着溜冰鞋往前滑。</p>
-<p>我就讲讲读中学之后的各种趣事糗事，总之讲的是过去的我，也就像是讲的不是我一样。</p>
-<p>我们还讨论用自己写的代码在卡牌游戏上击败波特，搞得我们还怪激动的。虽然我的能力也不够，写的算法差了点，但是我们还是花了3天调试，7天手算，算出来了，结果是最高难度的波特是不可战胜的。我只能安慰尘说我们从某种角度上来说已经赢了。</p>
-<p>当然，波特在我们手腕上显示的形象也一直在认真地听着，有时听高兴了也给我们分享一点流水线上的故事。没话题了的时候也恰当地喷喷气缓解一下冷场。</p>
-<p>那么是最后一次闲聊了。马上就要告别了，却不知道应该说什么。我们都还是望着天。</p>
-<p>我和他讲了一个故事，一个蛇和电梯，和电梯蛇的故事。这个故事就等我出去之后再写吧。</p>
-<p>“记得对自己好点。”</p>
-<p>不必在意是谁说的。</p>
-<h3 id="12-逃离"><a href="#12-逃离" class="headerlink" title="12.逃离"></a>12.逃离</h3><p>最后，我们只需要把卒挪到对方的将上面了。</p>
-<p>很难不想到对方一定在棋子周围打转，等着我去挪棋子。<br>不过我们有两个人，所以我去吸引对方注意，然后我们两个争取把棋子挪上。</p>
-<p>好，我进来了。对方两个人还是穿着闪亮的盔甲，绕着他们的将二人转。</p>
-<p>我决定直接冲。</p>
-<p>我大喊一声“说话，啊呀呀呀呀呀呀呀呀呀！”成功引起了他们的注意。也许是没有想到会有傻子这样冲过来，他们有点楞，不知道怎么搞我比较好。尘应该已经从另一边冲过来了。</p>
-<p>那么我不能退缩，我尝试从他们旁边绕过去直接摸棋子。可是两副很重的盔甲却并不笨拙。剑很快就刺入我的胸膛。</p>
-<p>我倒着，看见将开始虚化，转眼间又实化。也许确实只有一瞬间。</p>
-<p>然后我就失去意识了。</p>
-<h3 id="13-补叙"><a href="#13-补叙" class="headerlink" title="13.补叙"></a>13.补叙</h3><p>那么接下来的故事由我来讲。</p>
-<p>在白倒下的时候，尘正好摸到了将，卒就成功地挪过来了。</p>
-<p>那颗将的象棋棋子被压得四分五裂，碎成很多小块。</p>
-<p>其中一块击中了一个将，他带着质疑带着不可置信带着不甘大呼着倒在地上。</p>
-<p>其中一块击中了另一个将，他拼尽全力将手中急速腐朽的剑再度向白掷去，企图作最后报复，但剑还未出手人便已虚化，化为白色的尘埃飘散在向下坠落的盔甲牢笼中。</p>
-<p>其中一块击中了白，他瞬间消失，大概不会有更多痛苦了。</p>
-<p>其中一块击中了尘，他正大睁着眼，看着这将碎得遍地都是的慢动作播放，准确来说并非击中，而是他身旁的碎块发出淡黄的柔光，他伸出手去触碰，也瞬间消失了。</p>
-<p>其中一块击中了卒，卒散发着耀眼的黑光，吞噬了碎块。</p>
-<p>其中一块击中了我，正中我的面板，我的电路瞬间为之共鸣，排气口不住地一口一口地出气，机械臂和锅盖不受控制地摆动着，似乎要脱离控制。这种感觉似乎真实，似乎又像一个梦。然后，我也消失了。</p>
-<h3 id="14-何处何时何人何物何因何果何事何处来何处去？"><a href="#14-何处何时何人何物何因何果何事何处来何处去？" class="headerlink" title="14.何处何时何人何物何因何果何事何处来何处去？"></a>14.何处何时何人何物何因何果何事何处来何处去？</h3><p>我醒了。</p>
-<p>周围是天空的蓝，一片云也没有的蓝。</p>
-<p>下面也是天空的蓝，一片云也没有的海。</p>
-<p>晚风吹来不幸的消息，是什么呢，是什么呢？</p>
-<p>想不起来了。</p>
-<p>我觉得遗憾，遗憾什么呢？</p>
-<p>是未完结的物质结构一百题，还是能量流动二十四题呢？好像都不是。</p>
-<p>一片虚空里，我坐在哪里呢？</p>
-<p>下面是尘，他也坐在我屁股上，黑着脸。</p>
-<p>“你~为~何~滞~留~此~处~？”是他故作低沉的声音。</p>
-<p>“你少给老子在这里装，我们在哪儿？”</p>
-<p>“我们赢啦，现在正在出去呢。”</p>
-<p>“波特呢？”</p>
-<p>飘过来啦！我们伸出手把他抓住。</p>
-<p>波特的手竟温暖柔软如同兄长。</p>
-<p>我们一起回忆，一起写下了这篇故事。</p>
-<p>前面有一个黑色泛着紫色漩涡的洞，那大概就是出口了吧。</p>
-<h3 id="15-告别"><a href="#15-告别" class="headerlink" title="15.告别"></a>15.告别</h3><p>我醒了。</p>
-<p>躺在合身的棺材里。</p>
-<p>周围有人们，在协调着盖上棺，在唱歌，在跳舞。</p>
-<p>我腾地坐起身，人们吓得四散奔逃。</p>
-<p>没人跳舞了。</p>
-<p>常常有人说，“波特，下个蛋先。”“波特，跳个舞先。”</p>
-<p>这辈子是下不出蛋了，但是我可以跳舞。</p>
-<p>那我就自己跳个舞吧。</p>
-<p>跳跃，旋转，手部动作，加快加快。</p>
-<p>一直舞到累瘫为止。</p>
-<p>地上有两颗将做成的吊坠。</p>
-<p>我把它拴在钥匙扣上，发现自己的手腕还闪着蓝光。</p>
-<p>波特与尘和我告别。</p>
-<p>我有点舍不得，但我知道，就算分离，我们仍时刻相伴。</p>
-<p>“拜拜。”</p>
-<p>“再见。”</p>
-<p>“再会。”</p>
-<p>晚安，好梦。</p>
-<hr>
-<p>本来是一周年纪念文的，也确实是一周年之前开始写的，不过当时写得太慢，没写完，而且非常需要修改。</p>
-<p>所以咕到现在才发（</p>
-<p>水平不佳，当乐子看吧</p>
-<hr>
-<p>现在作博客的第一篇文章了O_o。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/19/fir/" data-id="cm63ejy1i00021sr5hyns332q" data-title="fir" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/01/18/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-01-18T03:58:03.905Z" itemprop="datePublished">2025-01-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/18/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/18/hello-world/" data-id="cm63ejy1f00011sr5d66l33wi" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/01/19/fir/">fir</a>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
           </li>
+          
         
-          <li>
-            <a href="/2025/01/18/hello-world/">Hello World</a>
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
     </div>
   </div>
+</nav>
 
   
-</aside>
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
+          
+        </div>
+
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+
       
-      &copy; 2025 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
   </div>
-</footer>
+</div>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/01/19/%E4%B8%8D%E6%98%AFsec/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/01/19/%E4%B8%8D%E6%98%AFsec/" target="_self">
+        <div>
+          大家好啊，今天来点大家想看的东西啊。 Linux （我）常用的指令： cd &#123;path&#125; 切到路径所指位置去。（cd .. 回退） ls 查看当前目录下有些啥。 mkdir &#123;name&#125; 创建名为 name 的文件夹。 别的没常用。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-01-19 17:09" pubdate>
+              2025-01-19
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/01/19/fir/" target="_self">
+          fir
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/01/19/fir/" target="_self">
+        <div>
+          满一岁也该写点东西，大家已经提议把这一天作为一个节日了。 好吧，希望这次怨气没有这么大。也但愿不要写得像读后续写。 要开始这个故事，我们得先睡过去。 1.睡！该如何醒来呢？ 昨天是愚人节，除了在 florr 上被戏弄了一下倒是没被 fool 到。 今天是比赛的第二天，打完了摆了返校了自习了回家了发现自己写挂了一小点。 不过我自信不会被恶意发现的。 可是我住在高空20层夹在高楼中间，怎么会有鸟叫？
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-01-19 16:49" pubdate>
+              2025-01-19
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/01/18/hello-world/" target="_self">
+          Hello World
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/01/18/hello-world/" target="_self">
+        <div>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-01-18 11:58" pubdate>
+              2025-01-18
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
 
-<script src="/js/script.js"></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-  </div>
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>
